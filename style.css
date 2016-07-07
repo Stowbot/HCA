@@ -1,0 +1,484 @@
+/*-----------------------------------FONTS------------------------------------*/
+
+
+@font-face {
+  font-family: Roboto_Thin;
+  src: url(../../Fonts/roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: Roboto_Reg;
+  src: url(../../Fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto_Italic;
+  src: url(../../Fonts/roboto/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: Roboto_Bold;
+  src: url(../../Fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../../Fonts/GothamBook.ttf);
+}
+
+@font-face {
+  font-family: IDroid;
+  src: url(../../Fonts/IDroidFont.ttf);
+}
+
+@font-face {
+  font-family: ocr_a;
+  src: url(../../Fonts/ocr_a.ttf);
+}
+
+
+/*------------------------BOOTSTRAP MODIFICATIONS-----------------------------*/
+
+
+.navbar-brand{
+  display: none;
+}
+
+.navbar-default{
+  background-color: rgba(248, 248, 248, 0.28);
+  border-color: transparent;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover{
+  color: #fff;
+}
+
+li:hover{
+  color: #fff;
+}
+
+.dropdown-menu{
+  text-align: center;
+}
+
+.glyphicon{
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #6e3667;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-nav>li>.dropdown-menu{
+  background-color: rgba(136,211,23,0.7);
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: inline;
+    max-width: 100%;
+    height: 432px;
+}
+
+.dropdown-menu>li>a{
+  color: #fff;
+}
+
+.dropdown-menu>li>a:hover{
+  color: #fff;
+  background-color: rgba(136,211,23,0.7);
+}
+
+.carousel-control.left{
+  background-image: linear-gradient(to right,rgba(107, 22, 121, 0.5) 0,rgba(0,0,0,.0001) 100%)
+}
+
+.carousel-control.right{
+  background-image: linear-gradient(to left,rgba(107, 22, 121, 0.5) 0,rgba(0,0,0,.0001) 100%)
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+}
+
+.sliderContainer{
+  padding: 0px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img-responsive{
+  width: 100%;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #88d317;
+    border-radius: 0px;
+    border: 0px solid transparent;
+}
+
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    background-color: #6e3667;
+    border: 0px solid transparent;
+}
+
+
+/*---------------------------------@MEDIA-------------------------------------*/
+
+
+@media screen and (max-width: 767px) {
+  .navbar-brand{
+    display: block;
+  }
+  .logoCon:nth-child(1){
+    display: none;
+  }
+  .award{
+    border-bottom: 1px solid #ccc;
+    height: 300px;
+  }
+  .currentTabS{
+    margin: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+      height: 432px;
+  }
+}
+
+
+@media screen and (max-width: 567px){
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+      height: 300px;
+  }
+}
+
+
+
+/*---------------------------------HTML---------------------------------------*/
+
+
+body{
+  font-family: Roboto_Reg;
+  font-size: 1.55em;
+  text-align: center;
+  color: black;
+}
+
+html{
+  background-color: #6e3667;
+}
+
+h1{
+  margin: 0px;
+}
+
+li{
+  font-size: 17.3px;
+}
+
+a{
+  padding: 0px;
+}
+
+footer{
+  background-color: #474747;
+  color: #fefefe;
+  padding: 5%;
+}
+
+ul{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0px;
+}
+
+
+
+
+/*---------------------------CLASSES AND ID'S---------------------------------*/
+
+
+.Wholepage{
+  background-color: #6e3667;
+}
+/*
+.heading{
+  background: -webkit-linear-gradient(top left , #88d317 35% , #6e3667 35% , #6e3667 70% , #88d317 69% )
+}
+*/
+.heading{
+  background: -webkit-linear-gradient(top left , rgba(136,211,23,0.7) 25% , rgba(110,54,103,0.7) 25% , rgba(110,54,103,0.7) 75% , rgba(136,211,23,0.7) 75% );
+}
+
+.logoCon{
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+}
+
+.logoCon > img{
+  width: 100%;
+}
+
+.logoCon:nth-child(1){
+  background-image: url(../../Images/HCA/HCALogoTransparent.png);
+  background-size: 100%;
+}
+
+.logoCon:nth-child(2){
+  width: 58px;
+}
+
+.BG-img {
+  position: relative;
+  font-family: Roboto_Bold;
+  text-transform: uppercase;
+  background-color: turquoise;
+  color: #fff;
+  padding: 0px;
+  width: auto;
+  background-image:  linear-gradient(rgba(110,54,103,0.6), rgba(110,54,103,0.6)), url(../../Images/HCA/Elise.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 700px;
+  background-position: top center;
+}
+@media screen and (max-width: 1200px){
+  .BG-img {
+    background-position: top center;
+    background-size: 100%;
+    padding-top: 54.6%;
+    height: auto;
+  }
+}
+
+.BG-img > h1{
+  font-size: 4vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.BG-img > h1 > span{
+  color: #88d317;
+}
+
+.showOff{
+  overflow: auto;
+}
+
+.award{
+  font-family: Roboto_Thin;
+  background-color: #88d317;
+  height: 432px;
+  color: #723a6b;
+  font-size: 40px;
+  border-left: 1px solid #ccc;
+}
+
+.showOff > div:nth-child(3){
+  background-image: linear-gradient(rgba(136,211,23,0.3), rgba(136,211,23,0.3)), url(../../Images/HCA/hcastudentbodyofficers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.showOff2{
+  padding: 30px 0px 0px 0px;
+  overflow: auto;
+}
+
+.collage{
+  padding: 0px;
+  overflow: auto;
+}
+
+.collageImg1{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 36%, 0% 45%);
+  z-index: 20;
+  background-image: -webkit-linear-gradient(top left , rgba(110,54,103,0.7) 35% , rgba(110,54,103,0.7) 70%), url(../../Images/HCA/HCABasketBig.jpg);
+  background-size: 100%;
+  padding-top: 68.6%;
+  background-repeat: no-repeat;
+}
+
+.collageImg2{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 18;
+  margin-top: -48%;
+  background: -webkit-linear-gradient(top left , rgba(136,211,23,0.6) 35% , rgba(136,211,23,0.6) 69%), url(../../Images/HCA/Flute.jpg) ;
+  background-size: 100%;
+  padding-top: 54.6%;
+  background-repeat: no-repeat;
+}
+
+.collageImg3{
+  position: relative;
+  width: 100%;
+  z-index: 19;
+  -webkit-clip-path: polygon(0% 10%, 100% 22.7%, 100% 100%, 0% 100%);
+  overflow: hidden;
+  margin-top: -20%;
+  background: -webkit-linear-gradient(top left , rgba(110,54,103,0.7) 35% , rgba(110,54,103,0.7) 70%), url(../../Images/HCA/AdmissionsTrim.jpg) ;
+  background-size: 100%;
+  padding-top: 44.6%;
+  background-repeat: no-repeat;
+}
+
+.collageQuote{
+  color: #fff;
+  font-size: 3.6vw;
+  font-family: Roboto_Bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.collageQuote > span{
+  color: #88d317;
+}
+
+.CQuotePos1{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.CQuotePos2{
+  position: absolute;
+  top: 35%;
+  left: 48%;
+}
+
+.CQuotePos2 > span {
+  color: #6e3667;
+}
+
+.CQuotePos3{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.Current{
+  background-color: #f8f8f8;
+  overflow: auto;
+}
+
+.TabMCon{
+  margin: 5% auto 0px auto;
+  overflow: auto;
+}
+
+.currentTabM{
+  background-color: #e1e1e1;
+  color: #ab1a99;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+.currentTabM > h1 {
+  font-size: 3vw;
+}
+
+.currentTabM > span {
+  font-size: 2.2vw;
+}
+
+.TabSCon{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.currentTabS{
+  color: #ab1a99;
+  background-color: #88d317;
+  border-left: solid #fff 1px;
+}
+
+.socialNetworks{
+  padding: 20px;
+  border-bottom: 1px solid  rgba(136,211,23,1);
+}
+
+.socCon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: none;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.socCon > a > img{
+  width: 50px;
+  height: 50px;
+}
+
+.footerSecCon{
+  overflow: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------BOTTOM------------------------------------*/
